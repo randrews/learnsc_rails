@@ -1,2 +1,4 @@
 public/static
 .DS_*
+*.sqlite3
+*.log
