@@ -23,3 +23,8 @@ Migrating to CreatePeople (20090518222131)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("people")[0m
+  [4;36;1mPerson Load (0.8ms)[0m   [0;1mSELECT * FROM "people" LIMIT 1[0m
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" LIMIT 1[0m
+  [4;36;1mPerson Load (0.6ms)[0m   [0;1mSELECT * FROM "people" LIMIT 1[0m
+  [4;36;1mPerson Load (10.9ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mPerson Load (9.6ms)[0m   [0mSELECT * FROM "people" [0m
