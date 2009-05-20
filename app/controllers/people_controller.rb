@@ -6,11 +6,8 @@ class PeopleController < ApplicationController
 
   def update
     p=Person.find_by_id params[:id]
-    par=JSON::parse params[:person]
-    
-    p.first_name=par['firstName']
-    p.last_name=par['lastName']
-    p.salary=par['salary']
+    par=clean_params(JSON::parse params[:person])
+    p.attributes=par
     p.save
 
     render :json=>p.to_hash
